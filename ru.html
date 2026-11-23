@@ -26,6 +26,11 @@ section{scroll-margin-top:140px}h2{font-size:13px;font-weight:700;letter-spacing
 footer{color:var(--muted);font-size:13px;text-align:center;padding:20px 18px 28px;letter-spacing:.02em}
 footer .review{display:inline-flex;align-items:center;min-height:56px;margin-top:12px;padding:0 20px;border-radius:12px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none}
 .l[hidden]{display:none}
+.item.vd{grid-template-columns:96px minmax(0,1fr) auto}
+.item .vw{position:relative;display:block;width:96px;height:96px}
+.item video{display:block;width:96px;height:96px;border-radius:12px;object-fit:cover;background:var(--surface);cursor:pointer}
+.vw.still::before{content:"";position:absolute;inset:0;margin:auto;width:40px;height:40px;border-radius:50%;background:var(--accent);opacity:.9;pointer-events:none}
+.vw.still::after{content:"";position:absolute;inset:0;margin:auto;width:0;height:0;transform:translateX(2px);border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent var(--accent-ink);pointer-events:none}
 </style></head><body>
 <header><h1>Me.You</h1><div class="sub"><span>Меню</span><span class="chip tbl" data-f="Стол #" hidden></span>
 <span class="langs"><a href="index.html" lang="uk">Українська</a><a href="en.html" lang="en">English</a><a href="ru.html" aria-current="page" lang="ru">Русский</a></span></div>
