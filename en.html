@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Me.You · Menu</title><meta name="robots" content="noindex">
-<style>:root{--bg: #EFEDE8; --surface: #FFFFFF; --surface-2: #E6E3DC; --ink: #121212; --muted: #5E5A55; --line: #D9D5CD; --accent: #121212; --accent-ink: #F2EFE9; --good: #2F7D4F; --warn: #8A5A12; --bad: #B0322E; --scrim: rgba(18, 18, 18, .42); --shadow: 0 1px 0 rgba(18, 18, 18, .04), 0 18px 40px -22px rgba(18, 18, 18, .35); --panel: #121212; --panel-ink: #F2EFE9; --panel-muted: #A39E96; --panel-line: #2E2C29; --highlight: #C49A55; --highlight-ink: #121212; --font-ui: "Golos Text", Rubik, "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; --font-display: Unbounded, Rubik, "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; color-scheme: light;}
+<style>:root{--bg: #EFEDE8; --surface: #FFFFFF; --surface-2: #E6E3DC; --ink: #121212; --muted: #5E5A55; --line: #D9D5CD; --accent: #121212; --accent-ink: #F2EFE9; --good: #2F7D4F; --warn: #8A5A12; --bad: #B0322E; --scrim: rgba(18, 18, 18, .42); --shadow: 0 1px 0 rgba(18, 18, 18, .04), 0 18px 40px -22px rgba(18, 18, 18, .35); --panel: #121212; --panel-ink: #F2EFE9; --panel-muted: #A39E96; --panel-line: #2E2C29; --highlight: #C49A55; --highlight-ink: #121212; --focus: #9A7432; --training: #2E6F8E; --training-ink: #FFFFFF; --font-ui: "Golos Text", Rubik, "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; --font-display: Unbounded, Rubik, "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; color-scheme: light;}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 header{position:sticky;top:0;z-index:2;background:var(--bg);padding:18px 18px 0;border-bottom:1px solid var(--ink)}
@@ -8,14 +8,14 @@ h1{margin:0;font-size:22px;font-weight:700;letter-spacing:.16em;text-transform:u
 .sub{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:8px;color:var(--muted);font-size:14px}
 .chip{display:inline-block;padding:3px 9px;border-radius:6px;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:13px}
 .chip[hidden]{display:none}
-.langs{margin-left:auto;display:flex;gap:2px}.langs a{padding:6px 9px;border-radius:8px;color:var(--muted);text-decoration:none;font-size:13px}
+.langs{margin-left:auto;display:flex;gap:2px}.langs a{display:inline-flex;align-items:center;min-height:44px;padding:0 9px;border-radius:8px;color:var(--muted);text-decoration:none;font-size:13px}
 .langs a[aria-current]{color:var(--ink);font-weight:700;border-radius:0;box-shadow:inset 0 -2px 0 var(--highlight)}
-nav{display:flex;gap:20px;overflow-x:auto;padding:14px 0 0;scrollbar-width:none;counter-reset:c}
-nav a{flex:none;padding:0 0 12px;color:var(--muted);text-decoration:none;font-weight:600;font-size:15px}
+nav{display:flex;gap:20px;overflow-x:auto;padding:4px 0 0;scrollbar-width:none;counter-reset:c}
+nav a{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 0 4px;color:var(--muted);text-decoration:none;font-weight:600;font-size:15px}
 nav a::before{counter-increment:c;content:counter(c,decimal-leading-zero) " ";font-size:11px;letter-spacing:.06em}
 nav a:focus,nav a:hover{color:var(--ink)}
 main{padding:4px 18px 32px;max-width:720px;margin:0 auto}
-section{scroll-margin-top:140px}h2{font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin:28px 0 4px;padding-bottom:10px;border-bottom:1px solid var(--ink)}
+section{scroll-margin-top:159px}h2{font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin:28px 0 4px;padding-bottom:10px;border-bottom:1px solid var(--ink)}
 .item{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
 .item.ph{display:grid;grid-template-columns:72px minmax(0,1fr) auto;align-items:center;gap:14px}
 .item img,.item .img{display:block;width:72px;height:72px;border-radius:8px;object-fit:cover;background:var(--surface) center/cover no-repeat}
